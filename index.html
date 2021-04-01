@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Barack & Szilva Étterem / Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="Media/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="Media/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="bookmark icon" type="image/x-icon" href="favicon.ico">
+<!--[if lt IE 9]>
+<script src="ScriptLibrary/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/dmxGoogleMaps.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/bandsz.css">
+
+<script src="js_1"></script>
+
+<script src="js/jquery-latest.pack.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/dmxHTML5ImageEnhancer.js"></script>
+<script src="js/dmxGoogleMaps.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/bandsz.js"></script>
+<script src="js/menuEN.js"></script>
+<script src="js/slider.js"></script>
+	
+<script async src="wejs" data-loadtrk="" onload="this.loadtrk=true"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+</head>
+
+<body>
+<header>
+	<div class="swiper-container slider-landing" id="slider-landingID">
+		<div class="title">
+			<h1>Barack & Szilva</h1>
+			<h2>Wine & Dine</h2>
+		</div>
+		<div class="info d-none d-sm-flex justify-content-around align-items-center">
+			<div>
+				<a href="javascript:void(0)" data-target="#whereID">
+				<i class="fas fa-map-marker-alt"></i>&nbsp;Budapest VII. Klauzál u. 13.</a>
+			</div>
+			<div id="gotoBottom" class="mt-3"><a href="#"></a></div>
+			<div>
+				<i class="fas fa-phone"></i>&nbsp;+36302580965, +3617988285<br>
+				<i class="fas fa-envelope"></i>&nbsp;<a href="mailto:restaurant@barackesszilva.hu" data-toggle="tooltip" title="We answer emails and reservations within 24 hours.">restaurant@barackesszilva.hu</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="taBox" class="d-none d-sm-block"></div>
+
+<div id="flagBox">
+	<a href="indexHU.html"><img src="images/flagHU.jpg" data-toggle="tooltip" data-placement="bottom" title="Magyarul"></a>
+</div>
+
+<div id="verticalMenuArrow" class="d-none d-sm-block">
+	<i class="fas fa-bars fa-2x"></i>
+</div>
+<nav id="side-nav" class="d-none d-sm-block">
+	<div class="collapse" id="verticalMenuBox">
+		<div class="nav nav-pills flex-column">
+			<a href="javascript:void(0)" data-target="#offerID">Menu</a>
+			<a href="javascript:void(0)" data-target="#aboutID">About Us</a>
+			<a href="javascript:void(0)" data-target="#whereID">Map</a>
+		</div>
+	</div>
+</nav>
+
+<section class="white">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col text-center">
+				<h2 id="offerID">Menu</h2>
+			</div>
+		</div>
+
+		<div class="row portfolio d-felx d-sm-none">
+			<div class="col-12 item">
+				<h3>FOODS</h3>
+				<a href="javascript:void(0)" class="myCollapseControl-xs" data-target="#collapseFoods-xs">
+					<img src="images/etelek.jpg" class="dmxHTML5ImageEnhancer img-fluid" alt="FOODS">
+				</a>
+			</div>
+			<div id="collapseFoods-xs" class="collapse">
+				<h3>STARTERS</h3>
+				<div id="myStarterID-xs"></div>
+				<h3>SOUPS</h3>
+				<div id="mySoupeID-xs"></div>
+				<h3>MAINCOURSES</h3>
+				<div id="myMaincourseID-xs"></div>
+				<h3>VEGETARIAN</h3>
+				<div id="myVegetarianID-xs"></div>
+				<h3>DESSERTS</h3>
+				<div id="myDessertID-xs"></div>
+				<p class="text-center text-info"><em>Prices are inclusive of VAT. 10% gratuity will be added to your bill.</em></p>
+                <p class="text-center text-info"><strong>Dear Guests!<br>If you have allegies or intolerances, please  inquire with your waiter about the ingredients!</strong></p>
+			</div>
+			<div class="col-12 item">
+				<h3>DRINKS</h3>
+				<a href="javascript:void(0)" class="myCollapseControl-xs" data-target="#collapseDrinks-xs">
+					<img src="images/italok.jpg" class="dmxHTML5ImageEnhancer img-fluid" alt="DRINKS">
+				</a>
+			</div>
+			<div id="collapseDrinks-xs" class="collapse">
+				<h3>Mineral waterm, soft drinks, coffee</h3>
+				<div id="mySoftdrinkID-xs"></div>
+				<h3>Aperitiff</h3>
+				<div id="myAperitiffID-xs"></div>
+				<h3>Spirits 4 cl.</h3>
+				<div id="mySpiritID-xs"></div>
+				<h3>Beers</h3>
+				<h4 class="text-primary text-center">Draft beer</h4>
+				<div id="myDraftbeerID-xs"></div>
+				<h4 class="text-primary text-center">Bottled beer</h4>
+				<div id="myBottledbeerID-xs"></div>
+				<h4 class="text-primary text-center">From Hungarian Brewery’s</h4>
+				<div id="myHandmadebeerID-xs"></div>
+				<h4 class="text-primary text-center">Cider</h4>
+				<div id="myCiderbeerID-xs"></div>
+				<p class="text-center text-info"><em>Prices are inclusive of VAT. 10% gratuity will be added to your bill.</em></p>
+			</div>
+			<div class="col-12 item">
+				<h3>CHEF'S OFFER</h3>
+				<a href="javascript:void(0)" class="myCollapseControl-xs" data-target="#collapseChef-xs">
+					<img src="images/ajanlat.jpg" class="dmxHTML5ImageEnhancer img-fluid" alt="CHEF'S OFFER">
+				</a>
+			</div>
+			<div id="collapseChef-xs" class="collapse">
+				<h3>Hungarian table d’hote</h3>
+				<div id="myHungarianID-xs" class="chef"></div>
+				<h3>Sesonal table d’hote</h3>
+				<div id="mySeasonID-xs" class="chef"></div>
+				<p class="text-center text-info"><em>Prices are inclusive of VAT. 10% gratuity will be added to your bill.</em></p>
+			</div>
+		</div>
+
+		<div class="row portfolio d-none d-sm-flex justify-content-sm-between">
+			<div class="col-4 item">
+				<a href="javascript:void(0)" class="myCollapseControl" data-target="#collapseFoods">
+					<img src="images/etelek.jpg" class="dmxHTML5ImageEnhancer img-fluid" alt="FOODS">
+				</a>
+			</div>
+			<div class="col-4 item">
+				<a href="javascript:void(0)" class="myCollapseControl" data-target="#collapseDrinks">
+					<img src="images/italok.jpg" class="dmxHTML5ImageEnhancer img-fluid" alt="DRINKS">
+				</a>
+			</div>
+			<div class="col-4 item">
+				<a href="javascript:void(0)" class="myCollapseControl" data-target="#collapseChef">
+					<img src="images/ajanlat.jpg" class="dmxHTML5ImageEnhancer img-fluid" alt="CHEF'S OFFER">
+				</a>
+			</div>
+		</div>
+
+		<div class="row portfolio d-none d-sm-block">
+			<div id="collapseFoods" class="col-10 col-lg-8 col-xl-6 mx-auto collapse">
+				<h2>FOODS</h2>
+				<h3>STARTERS</h3>
+				<div id="myStarterID"></div>
+				<h3>SOUPS</h3>
+				<div id="mySoupeID"></div>
+				<h3>MAINCOURSES</h3>
+				<div id="myMaincourseID"></div>
+				<h3>VEGETARIAN</h3>
+				<div id="myVegetarianID"></div>
+				<h3>DESSERTS</h3>
+				<div id="myDessertID"></div>
+				<p class="text-center text-info"><em>Prices are inclusive of VAT. 10% gratuity will be added to your bill.</em></p>
+                <p class="text-center text-info"><strong>Dear Guests!<br>If you have allegies or intolerances, please  inquire with your waiter about the ingredients!</strong></p>
+				<div class="d-flex justify-content-around bg-light shadow p-3 mt-3">
+					<a href="javascript:void(0)" class="btn btn-primary myCollapseControl" data-target="#collapseDrinks"><i class="fas fa-wine-glass-alt"></i>&nbsp;DRINKS</a>
+					<a href="javascript:void(0)" class="btn btn-primary myCollapseControl" data-target="#collapseChef"><i class="far fa-thumbs-up"></i>&nbsp;CHEF'S OFFER</a>
+				</div>
+			</div>
+			<div id="collapseDrinks" class="col-10 col-lg-8 col-xl-6 mx-auto collapse">
+				<h2>DRINKS</h2>
+				<h3>Mineral waterm, soft drinks, coffee</h3>
+				<div id="mySoftdrinkID"></div>
+				<h3>Aperitiff</h3>
+				<div id="myAperitiffID"></div>
+				<h3>Spirits 4 cl.</h3>
+				<div id="mySpiritID"></div>
+				<h3>Beers</h3>
+				<h4 class="text-primary text-center">Draft beer</h4>
+				<div id="myDraftbeerID"></div>
+				<h4 class="text-primary text-center">Bottled beer</h4>
+				<div id="myBottledbeerID"></div>
+				<h4 class="text-primary text-center">From Hungarian Brewery’s</h4>
+				<div id="myHandmadebeerID"></div>
+				<h4 class="text-primary text-center">Cider</h4>
+				<div id="myCiderbeerID"></div>
+				<p class="text-center text-info"><em>Prices are inclusive of VAT. 10% gratuity will be added to your bill.</em></p>
+				<div class="d-flex justify-content-around bg-light shadow p-3 mt-3">
+					<a href="javascript:void(0)" class="btn btn-primary myCollapseControl" data-target="#collapseFoods"><i class="fas fa-utensils"></i>&nbsp;FOODS</a>
+					<a href="javascript:void(0)" class="btn btn-primary myCollapseControl" data-target="#collapseChef"><i class="far fa-thumbs-up"></i>&nbsp;CHEF'S OFFER</a>
+				</div>
+			</div>
+			<div id="collapseChef" class="col-10 col-lg-8 col-xl-6 mx-auto collapse">
+				<h2>CHEF'S OFFER</h2>
+				<h3>Hungarian table d’hote</h3>
+				<div id="myHungarianID" class="chef"></div>
+				<h3>Sesonal table d’hote</h3>
+				<div id="mySeasonID" class="chef"></div>
+				<p class="text-center text-info"><em>Prices are inclusive of VAT. 10% gratuity will be added to your bill.</em></p>
+				<div class="d-flex justify-content-around bg-light shadow p-3 mt-3">
+					<a href="javascript:void(0)" class="btn btn-primary myCollapseControl" data-target="#collapseFoods"><i class="fas fa-utensils"></i>&nbsp;FOODS</a>
+					<a href="javascript:void(0)" class="btn btn-primary myCollapseControl" data-target="#collapseDrinks"><i class="fas fa-wine-glass-alt"></i>&nbsp;DRINKS</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="grey">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col mx-auto text-center">
+				<h2 id="aboutID">About Us</h2>
+			</div>
+		</div>
+		<div class="row mt-3 p-4">
+			<div class="col-xl-7 mx-auto about">
+				<h2 class="text-primary text-center">Barack & Szilva Restaurant</h2>
+				<p>Barack &amp; Szilva is a restaurant with nice and pleasant atmosphere in the heart of Budapest, on the edge of lively &ldquo;party-district&rdquo;.</p>
+				<p>We imagined a place, where our guests can enjoy and taste the delicious, carefully prepared dishes in a calm, cozy, friendly environment. &ldquo;No frills, only high-quality raw materials, expertise and hospitality.&rdquo; We believe this is enough.</p>
+				<p>Our chef, György Gunst has decades of experience: the menu was set according to this. Our guests can taste the traditional Hungarian cuisine and also the delicious dishes of the French, Italian and Jewish cuisine. We have also set a wine list with the finest Hungarian wines.</p>
+				<p>Our aim was to create a home-style cuisine in a rustic-modern environment. This, combined with the heart-warming play of Kálmán Varga, the dulcimer-master creates the harmony of flavors and melodies.</p>
+				<p class="text-center"><strong>Our dream came true, Barack &amp; Szilva has opened and welcomes everyone! </strong></p>
+			</div>
+			<div class="col-xl-5">
+				<div class="card text-center mx-auto shadow-lg mt-1">
+					<div class="card-body address">
+						<p class="text-primary title">Address</p>
+						<p class="text-info">Budapest VII. <br class="d-sm-none">Klauzál u. 13.</p>
+						<p class="text-primary"><span class="title">Reservation</span><br><span>(from 16 to 24 óráig!)</span></p>
+						<p class="text-info">+36302580965, +3617988285</p>
+						<p class="text-primary title">Opening hours</p>
+						<ul class="text-info">
+							<li>Monday, Tuesday, Wednesday, Thursday,<br>Friday, Saturday: <br class="d-sm-none">18.00 - 24.00</li>
+							<li>Sunday: closed</li>
+						</ul>
+						<ul class="text-info">
+							<li class="text-danger">Dear Guests!</li>
+							<li class="text-danger">Due to the travel restrictions, our restaurant will be CLOSED from 3rd September.</li>
+							<li class="text-danger">Hope to see You again very soon!</li>
+							<li class="text-danger">Until then see you in our sister restaurant at <a href="https://almaeskorte.hu/indexEN.html" target="_blank">Alma & Körte</a></li>
+						</ul>
+						<div class="contact-btn">
+							<a href="mailto:restaurant@barackesszilva.hu" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="bottom" title="We answer emails and reservations within 24 hours.">Contact Us</a>
+						</div>
+						<div id="taBox-xs" class="col text-center d-block d-sm-none"></div>
+					</div>
+				</div>
+				<img src="images/logoBANDSZ.jpg" alt="Barack & Szilva Restaurant" class="rounded-circle mt-5 img-fluid mx-auto d-block">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="white">
+	<div class="container-fluid">
+		<div class="row p-1">
+			<div class="col text-center map">
+				<h2 id="whereID">Map</h2>
+				<div class="dmxGoogleMaps shadow" id="googleMap"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="darkpurple">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col text-center">
+				<h2>We also recommend this to you!</h2>
+			</div>
+		</div>
+		<div class="row offertoo">
+			<div class="col-lg-5 offset-lg-1">
+				<div class="swiper-container slider-offerto border mt-2" id="slider-offertoID">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="title mb-2 mt-5">Alma & Körte Restaurant</div>
+				<ul class="list-inline text-center">
+					<li><i class="fas fa-globe"></i>&nbsp;<a href="https://almaeskorte.hu/" target="_blank">almaeskorte.hu</a></li>
+				</ul>
+				<div class="mt-3 text-center pl-4">
+					<a href="https://almaeskorte.hu" target="_blank">
+						<img src="images/logoAANDK.jpg" class="rounded-circle logo" alt="Alma & Körte Restaurant">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<h3 class="mt-2 d-flex justify-content-center">
+		<span class="mx-2"><i class="fas fa-map-marker-alt"></i>&nbsp;Budapest VII. Klauzál u. 13.</span>
+		<span class="mx-2"><i class="fas fa-phone"></i>&nbsp;+36302580965, +3617988285</span>
+		<span class="mx-2"><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:restaurant@barackesszilva.hu" data-toggle="tooltip" title="We answer emails and reservations within 24 hours.">restaurant@barackesszilva.hu</a></span>
+	</h3>
+	<h4 class="mt-3 mb-2 d-flex justify-content-center">
+		<span class="mx-2">Copyright © Barack & Szilva Étterem / Restaurant</span>
+		<span class="mx-2">Created by <a href="https://www.balinternet.hu" target="_blank">BÁLINTERNET</a></span>
+	</h4>
+	<div id="gotoTop" class="d-none d-sm-block"><a href="#"></a></div>
+</footer>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+				<h3 class="modal-title text-white">Attention!!</h3>
+				<button type="button" class="close text-white-50" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+            </div>
+            <div class="modal-body text-center">
+				<div class="text-danger mb-2">Dear Guests!</div>
+                <div class="text-danger mb-2">Due to the travel restrictions, our restaurant will be CLOSED from 3rd September.</div>
+				<div class="text-danger mb-2">Hope to see You again very soon!</div>
+				<div class="text-danger mb-2">Until then see you in our sister restaurant at <a href="https://almaeskorte.hu/indexEN.html" target="_blank">Alma & Körte</a></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
